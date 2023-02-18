@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+  position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bgtop{
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+  top: -50%;
+}
+.bgbot{
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 50%;
+}
+
+ .main-card{
+
+    position: absolute;
+    height: 370px;
+    width: 350px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 11px 10px 22px 0px rgba(0,0,0,0.36);
+ }
+ .top-card{
+    position: relative;
+    width: 350px;
+    height: 140px;
+    background-image: url('images/bg-pattern-card.svg');
+ }
+ .img-victor{
+  border: 0.5ch white solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+ }
+
+ .botom-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: auto;
+}
+
+.perso-info{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.perso-info > strong{
+  padding: 10px;
+  color: hsl(229, 23%, 23%);
+  font-size: 1.3rem;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.perso-info > span{
+  color: hsl(227, 10%, 46%);
+  font-size: 1.3rem;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+ .perso-info > p {
+  color: hsl(227, 10%, 46%);
+  font-size: 1rem;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+ }
+
+ hr{
+  margin-top: 20px;
+  width: 100%;
+  opacity: 30%;
+  margin-bottom: 30px;
+ 
+ }
+
+ .Stats{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ .Numb{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color:hsl(229, 23%, 23%);
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+ }
+.words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: hsl(227, 10%, 46%);
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
